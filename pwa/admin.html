@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin</title>
+	<link rel="manifest" href="/manifest.json">
+	<meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit= no"charset="utf-8">
+	<meta name="theme-color" content= "#A523B4">
+	<link rel="stylesheet" type="text/css" href="styles/inline.css">
+	
+	<script src="scripts/app.js" async></script>
+	<script src="scripts/admin.js" async></script>
+	
+</head>
+<body>
+	<header class="header">
+		<a id="butMenu" class="headerButton menu">
+		    <span>&#9776;</span>
+		</a>
+	    <h1 class="header__title">Admin Page</h1>
+	    <a id="butTest" class="headerButton home" >
+		    <span>&#9776;</span>
+		</a>
+  	</header>
+  	<!--end of head, start of main-->
+  	<main class="main">
+  		<div id="mySidenav" class="sidenav">
+		  <a>Preview</a>
+		  <a id="butLogin" class="butCredentials" style="display: none;">Login</a>
+		  <a id="butLogout" class="butCredentials"style="display: block;">Logout</a>
+		</div>
+
+		<div id="time"></div>
+		<div>Order received will end on <label id="editTime"></label> .</div>
+
+		<div class="foodCard" >
+  			<ul class="cards">
+				<li class="item">
+					<img class="foodImg" src="">
+					<label class="foodPrice"></label>
+					<label class="foodName"></label>
+					<label class="foodDesc"></label>
+				</li>
+			</ul>
+		</div>
+
+  	</main>
+  	<div class="footer">
+  		<div class="butFooter1" align="left">
+  			<button id="butToday" class="footerButton" aria-label="Today"></button>
+  			<label id="butFooter1Name">Today's Menu</label></div>
+  		<div class="butFooter2" align="right">
+  			<label id="butFooter2Name" style="font-size: 15px">Tomorrow's Menu</label>
+  			<button id="butTomorrow" class="footerButton" aria-label="Tomorrow"></button></div>
+	</div>
+</body>
+</html>
